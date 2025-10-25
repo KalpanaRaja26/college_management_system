@@ -30,8 +30,7 @@ A **web-based College Management System** to manage college details, departments
 
 Click to view full-size images:
 
-[![College Home](bgclg.jpg)](bgclg.jpg)  
-[![College Form](college_form.html)](college_form.html)  
+[![College Home](bgclg.jpg)](bgclg.jpg) 
 [![College Management](college.png)](college.png)  
 
 ---
