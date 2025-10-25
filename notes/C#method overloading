@@ -1,0 +1,19 @@
+Method overriding - AreaOfShapes
+Aim:
+To develop a C# program that calculates and displays the area of different geometric shapes (Rectangle, Circle, and Triangle) using object-oriented programming concepts such as abstraction and polymorphism.
+Procedure:
+1.	Define an Abstract Class (Shape)
+o	Declare an abstract property Area to enforce area calculation in derived classes.
+o	Implement a virtual method DisplayInfo() to display the shape name and area.
+2.	Create Derived Classes (Rectangle, Circle, Triangle)
+o	Each class should inherit from Shape.
+o	Implement the Area property according to the specific formula for each shape.
+o	Override DisplayInfo() to include additional shape-specific properties.
+3.	Implement the ShapeCalculator Class
+o	Instantiate objects of Rectangle, Circle, and Triangle with sample values.
+o	Store them in a List<Shape> to leverage polymorphism.
+o	Use a loop to call DisplayInfo() on each shape, printing its details.
+4.	Compile and Execute the Program
+o	Ensure there are no syntax errors.
+o	Run the program in Visual Studio 2010 and verify the output.
+

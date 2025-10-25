@@ -1,0 +1,334 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Home Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #1b263b;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      flex-wrap: wrap;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-title img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .logo-title h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #778da9;
+      border-radius: 5px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .form-section {
+      background-color: #f1f3f5;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+      margin: 30px auto;
+    }
+
+    .form-section h2 {
+      text-align: center;
+      color: #1b263b;
+      margin-bottom: 20px;
+    }
+
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-section input,
+    .form-section select {
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-section button {
+      background-color: #1b263b;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-section button:hover {
+      background-color: #415a77;
+    }
+
+    .sign-in-section {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .sign-in-section p {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .sign-in-section button {
+      background-color: #778da9;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      font-size: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .sign-in-section button:hover {
+      background-color: #55687a;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      min-height: 500px;
+    }
+
+    .quote-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px;
+      background-color: #e9ecef;
+    }
+
+    .quote-section blockquote {
+      font-size: 26px;
+      font-style: italic;
+      color: #1b263b;
+      max-width: 500px;
+      line-height: 1.6;
+      border-left: 5px solid #415a77;
+      padding-left: 20px;
+    }
+
+    .image-section {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slideshow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      animation: slide 15s infinite;
+    }
+
+    @keyframes slide {
+      0%   { background-image: url('bgclg1.jpeg'); }
+      33%  { background-image: url('bgclg.jpg'); }
+      66%  { background-image: url('bgclg2.jpg'); }
+      100% { background-image: url('bgclg3.jpg'); }
+    }
+
+    .more-info {
+      background-color: #ffffff;
+      padding: 50px 30px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .more-info .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .more-info h2, .more-info h3 {
+      color: #1b263b;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #1b263b;
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 30px 20px;
+      font-size: 20px;
+    }
+
+    footer div {
+      margin: 10px;
+      min-width: 200px;
+    }
+
+    footer h3 {
+      color: #adbfd4;
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .copyright {
+      text-align: center;
+      width: 100%;
+      margin-top: 20px;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+      font-size: 17px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-title">
+    <img src="college.png" alt="College Logo">
+    <h1>INDIRA GANDHI COLLEGE OF ARTS AND SCIENCE</h1>
+  </div>
+  <nav>
+    <a href="main.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Contact.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<!-- Register Form Section -->
+<div class="container">
+  <div class="form-section">
+    <h2>Register</h2>
+    <form action="register.asp" method="POST">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <select name="role" required>
+        <option value="">Select Role</option>
+        <option value="Student">Student</option>
+        <option value="Faculty">Faculty</option>
+        <option value="Admin">Admin</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+    <div class="sign-in-section">
+      <p>Already have an account?</p>
+      <button onclick="window.location.href='login.html'">Sign In</button>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="quote-section">
+    <blockquote>
+      "Indira Gandhi College of Arts and Science was started in the year 2001 with four under graduate courses with intake of 33 students in Biotechnology, Computer Applications, Foreign Trade and Statistics with the prime objective of providing quality education in the fields of Information Technology, Biotechnology."
+    </blockquote>
+  </div>
+  <div class="image-section">
+    <div class="slideshow"></div>
+  </div>
+</main>
+
+<section class="more-info">
+  <div class="container">
+    <h2>About the Institution</h2>
+    <p>
+      Under this Society, presently one College of Education in Karaikal Region and four Arts & Science Colleges in Puducherry Region are functioning. Indira Gandhi College of Arts and Science started functioning from the academic year 2001-02 under the aegis of this Society, is running in the premises of the Government Girls’ Higher Secondary School, Kadirkamam, Puducherry-9.
+    </p>
+    <h3>Infrastructure</h3>
+    <p>
+      This college is covered under section 2(f) of UGC Act. This college has been allotted land in Oulgaret Revenue village for the construction of new buildings. Currently, it is housed in the Government school campus, which is situated in the central area of the capital town of Puducherry. It has a main building that accommodates the administrative office, staff room, academic departments and the laboratories. The laboratories are well equipped and carefully maintained. The class rooms, multipurpose hall, library, NSS, NCC and sports room are in the other building. Every floor is equipped with rest rooms for male and female students individually.
+    </p>
+    <p>
+      There is adequate facility for the students to perform all prescribed experiments and do project work. The Government of Puducherry appoints watchmen, and sweepers for the maintenance of college campus and the existing services. The PWD is responsible for maintaining the physical infrastructure facilities and water and electricity services. The Government appoints Lab assistants for the Science Labs. They are responsible for the maintenance of equipment in the lab.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <h3>Quick Links</h3>
+    <a href="login.html">College</a>
+    <a href="login.html">Course</a>
+    <a href="login.html">Department</a>
+    <a href="login.html">Staff</a>
+    <a href="login.html">Subject</a>
+    <a href="login.html">Notes</a>
+    <a href="login.html">Semester</a>
+  </div>
+
+  <div>
+    <h3>Contact Us</h3>
+    <p>INDIRA GANDHI COLLEGE OF ARTS AND SCIENCE, PUDUCHERRY – 605 006</p>
+    <p>Email: igcas2001@gmail.com</p>
+    <p>Phone: 0413-2275510, 2277868</p>
+  </div>
+
+  <div class="copyright">
+    &copy; 2025 Igcas. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
